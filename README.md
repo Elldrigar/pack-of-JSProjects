@@ -21,13 +21,14 @@
 [![Twitter Follow][twitterBadge-url]][twitter-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# About The Project
+# Projects:
+
 
 
 
 
 <!-- LINKS -->
-[gitHub-url]: https://badgen.net/github/release/Elldrigar/net_JUNIOR_work?icon=github
+[gitHub-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterBadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
 [twitter-url]: https://twitter.com/Elldrigar
