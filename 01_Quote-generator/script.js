@@ -1,13 +1,25 @@
-// const quoteContainer = documnet.getElementById('quote-container')
+const quoteContainer = document.getElementById('quote-container')
 const quoteText = document.getElementById('quote')
 const authorText = document.getElementById('author')
 const twitterBtn = document.getElementById('twitter')
 const newQuoteBtn = document.getElementById('new-quote')
+const loader = document.getElementById('loader')
 
+function showSpinner() {
+    loader.hidden = false;
+    quoteContainer.hidden = true;
+}
 
+function hideSpinner() {
+    if (!loader.hidden) {
+        quoteContainer.hidden = false;
+        loader.hidden = true;
+    }
+}
 
 // GET QUOTE FROM FORISMATIC API
 async function getQuote() {
+    showSpinner()
     const proxyURL = 'https://intense-tor-03895.herokuapp.com/'
     const apiURL = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json'
 
@@ -26,9 +38,10 @@ async function getQuote() {
             quoteText.classList.remove('quote__text--long')
         }
         quoteText.innerText = data.quoteText;
+        hideSpinner()
     } catch (error) {
         getQuote()
-        console.log('Error', error)
+        console.log('Error with API', error)
     }
 }
 

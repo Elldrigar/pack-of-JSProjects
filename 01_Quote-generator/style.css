@@ -87,6 +87,27 @@ body {
     box-shadow: 0 .1rem rgba(255, 255, 255, .65);
 }
 
+/* LOADER/SPINNER */
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #333333;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s linear infinite;
+}
+
+/* ANIMATION */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 1000px) {
     .quote__container {
