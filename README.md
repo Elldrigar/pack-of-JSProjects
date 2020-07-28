@@ -4,10 +4,10 @@
     <img src="https://gawron.me/gawronLogo.png" alt="Logo" width="100">
   </a>
 
-  <h3 align="center">JavaScript Projects</h3>
+  <h1 align="center">JavaScript Projects</h1>
 
   <p align="center">
-    Simple projects made in JavaScript
+    ..:: Simple projects made in JavaScript ::..
     <br />
     <br />
     <a href="https://github.com/Elldrigar/pack-of-JSProjects/issues">Report Bug</a>
@@ -21,11 +21,16 @@
 [![Twitter Follow][twitterBadge-url]][twitter-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Projects:
-| Project/Demo                         | Description                 | Screen |
-| --------------------------------| ----------------------------| ------ |
-| [Quote Generator](link)             | Using forismatic API    | <img src="https://demo.gawron.me/screens/01_screen.png" alt="screen" width="100">   |
-| [Infinity Scroll]() | Using cos tam | 
+<br>
+<h2 align="center"> 🚧 Work in progress 🚧 </h2>
+<br>
+
+
+# 📋 Projects List:
+| Project Name                | Description            | Screen |
+| ----------------------------| -----------------------| ------ |
+| [Quote Generator][pr01]     | Using forismatic API   | <img src="https://demo.gawron.me/screens/01_screen.png" width="100"> |
+| [Infinity Scroll]()         | Using unsplash API         |                                                                      |
 
 
 
@@ -34,6 +39,7 @@
 
 
 <!-- LINKS -->
+[pr01]: https://demo.gawron.me/quote-generator/
 [gitHub-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterBadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
