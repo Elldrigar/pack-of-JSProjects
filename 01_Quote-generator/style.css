@@ -48,6 +48,45 @@ body {
     font-style: italic;
 }
 
+.button__container {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.button__twitter,
+.button__quote {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #cecece;
+    background: #333333;
+    outline: none;
+    padding: .5rem 1.8rem;
+    box-shadow: 0 .3rem rgba(121, 121, 121, .65);
+}
+
+.button__twitter {
+    font-size: 1.5rem;
+}
+
+.button__twitter:hover,
+.button__quote:hover {
+    filter: brightness(110%);
+}
+
+.button__twitter:hover {
+    color: #38a1f3;
+}
+
+.button__twitter:active,
+.button__quote:active {
+    transform: translate(0, .3rem);
+    box-shadow: 0 .1rem rgba(255, 255, 255, .65);
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width: 1000px) {
     .quote__container {
