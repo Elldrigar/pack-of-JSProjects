@@ -22,6 +22,12 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Projects:
+| Project/Demo                         | Description                 | Screen |
+| --------------------------------| ----------------------------| ------ |
+| [Quote Generator](link)             | Using forismatic API    | <img src="https://demo.gawron.me/screens/01_screen.png" alt="screen" width="100">   |
+| [Infinity Scroll]() | Using cos tam | 
+
+
 
 
 
