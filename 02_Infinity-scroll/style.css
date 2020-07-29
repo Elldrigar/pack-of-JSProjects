@@ -35,3 +35,24 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.images__container {
+    margin: 10px 30%;
+}
+
+.images__container img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* MEDIA QUERY - LARGE SMARTPHONE */
+@media screen and (max-width: 600px) {
+    .header__text {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .images__container {
+        margin: 10px;
+    }
+}
