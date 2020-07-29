@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    Font-family: 'Cinzel', serif;
+    background-color: #bad8e4;
+    color: #252523
+}
+
+.header__text {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, .8);
+}
+
+.loader__image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
