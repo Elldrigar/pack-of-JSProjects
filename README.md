@@ -15,34 +15,29 @@
     <a href="https://github.com/Elldrigar/pack-of-JSProjects/issues">Request Feature</a>
   </p>
 
-
-![GitHub Release][gitHub-url]
+![GitHub Release][github-url]
 ![MIT License][mit-license-image]
-[![Twitter Follow][twitterBadge-url]][twitter-url]
+[![Twitter Follow][twitterbadge-url]][twitter-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <br>
 <h2 align="center"> 🚧 Work in progress 🚧 </h2>
 <br>
 
-
 # 📋 Projects List:
-| Project Name                | Description            | Screen |
-| ----------------------------| -----------------------| ------ |
-| [Quote Generator][pr01]     | Using forismatic API   | <img src="https://demo.gawron.me/screens/01_screen.png" width="100"> |
-| [Infinity Scroll]()         | Using unsplash API         |                                                                      |
 
-
-
-
-
-
+| Project Name                    | Description          | Screen                                                               |
+| ------------------------------- | -------------------- | -------------------------------------------------------------------- |
+| [Quote Generator][pr01]         | Using forismatic API | <img src="https://demo.gawron.me/screens/01_screen.png" width="100"> |
+| [Random Images on scroll][pr02] | Using unsplash API   | <img src="https://demo.gawron.me/screens/02_screen.png" width="100"> |
 
 <!-- LINKS -->
+
 [pr01]: https://demo.gawron.me/quote-generator/
-[gitHub-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
+[pr02]: https://demo.gawron.me/Infinity-scroll/
+[github-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
-[twitterBadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
+[twitterbadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
 [twitter-url]: https://twitter.com/Elldrigar
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/artur-gawron-41bb40138/
