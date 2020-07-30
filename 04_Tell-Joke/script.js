@@ -1,20 +1,24 @@
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
 
-// function test() {
-//   VoiceRSS.speech({
-//     key: 'ba5da6c59560459680c25b1c59818a70',
-//     src: 'Hello World',
-//     hl: 'en-gb',
-//     v: 'Nancy',
-//     r: 0,
-//     c: 'mp3',
-//     f: '44khz_16bit_stereo',
-//     ssml: false,
-//   });
-// }
+//DISABLE/ENABLE BUTTON
+function toggleButton() {
+  button.disabled = !button.disabled;
+}
 
-// test();
+//PASSING JOKE TO VOICERSS API
+function tellMeJoke(joke) {
+  VoiceRSS.speech({
+    key: 'ba5da6c59560459680c25b1c59818a70', // GO TO rapidapi.org ang get your own KEY, It's Free! :)
+    src: joke,
+    hl: 'en-gb',
+    v: 'Nancy',
+    r: 0,
+    c: 'mp3',
+    f: '44khz_16bit_stereo',
+    ssml: false,
+  });
+}
 
 //GET JOKES FROM JOKE API
 async function getJokes() {
@@ -28,10 +32,13 @@ async function getJokes() {
     } else {
       joke = data.joke;
     }
-    console.log(joke);
+    tellMeJoke(joke);
+    toggleButton();
   } catch (error) {
     console.log(error);
   }
 }
 
-getJokes();
+//EVENT LISTENERS
+button.addEventListener('click', getJokes);
+audioElement.addEventListener('ended', toggleButton);
