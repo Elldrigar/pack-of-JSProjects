@@ -31,12 +31,14 @@
 | [Quote Generator][pr01]         | Using forismatic API            | <img src="https://demo.gawron.me/screens/01_screen.png" width="100"> |
 | [Random Images on scroll][pr02] | Using unsplash API              | <img src="https://demo.gawron.me/screens/02_screen.png" width="100"> |
 | [PiP][pr03]                     | Picture in Picture Video player | <img src="https://demo.gawron.me/screens/03_screen.png" width="100"> |
+| [Tell Me a Joke][pr04]          | Using VoiceRSS API and JokeAPI  | <img src="https://demo.gawron.me/screens/04_screen.png" width="100"> |
 
 <!-- LINKS -->
 
 [pr01]: https://demo.gawron.me/quote-generator/
 [pr02]: https://demo.gawron.me/infinity-scroll/
 [pr03]: https://demo.gawron.me/picture-in-picture/
+[pr04]: https://demo.gawron.me/tell-joke/
 [github-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterbadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
