@@ -21,7 +21,7 @@ body {
     background-repeat: no-repeat;
 }
 
-button {
+.container__button {
     cursor: pointer;
     outline: none;
     width: 200px;
@@ -36,15 +36,15 @@ button {
     transition: ease .2s;
 }
 
-button:hover {
+.container__button:hover {
     filter: brightness(90%);
 }
 
-button:active {
+.container__button:active {
     transform: scale(0.95);
 }
 
-button:disabled {
+.container__button:disabled {
     cursor: default;
     filter: brightness(30%);
 }
@@ -55,7 +55,7 @@ button:disabled {
         background-position: center center;
     }
 
-    button {
+    .container__button {
         box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, .5);
     }
 }
