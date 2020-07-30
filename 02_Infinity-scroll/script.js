@@ -3,16 +3,30 @@ const loader = document.getElementById('loader');
 
 let photosArray = [];
 
+function setAtrributes(element, attributes) {
+    for (const key in attributes) {
+        element.setAttribute(key, attributes[key]);
+    }
+}
+
 // CREATE ELEMENTS FOR LINKS,PHOTOS 
 function displayPhotos() {
     photosArray.forEach((photo) => {
         const item = document.createElement('a');
-        item.setAttribute('href', photo.links.html);
-        item.setAttribute('target', '_blank');
+
+        setAtrributes(item, {
+            href: photo.links.html,
+            target: '_blank',
+        });
+
         const img = document.createElement('img');
-        img.setAttribute('src', photo.urls.regular);
-        img.setAttribute('alt', photo.alt_description);
-        img.setAttribute('title', photo.alt_description);
+
+        setAtrributes(img, {
+            src: photo.urls.regular,
+            alt: photo.alt_description,
+            title: photo.alt_description,
+        })
+
         item.appendChild(img);
         imagesContainer.appendChild(item);
     })
@@ -29,7 +43,7 @@ async function getPhotos() {
         photosArray = await response.json();
         displayPhotos();
     } catch (error) {
-        // ERROR
+        console.log(error)
     }
 }
 
