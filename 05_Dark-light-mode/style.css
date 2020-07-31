@@ -76,3 +76,19 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+.title__container {
+    text-align: center;
+}
+
+.title__one {
+    font-family: 'Special Elite', cursive;
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.title__two {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--on-background-alt);
+}
