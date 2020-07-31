@@ -129,6 +129,7 @@ section {
     border: 2px solid var(--primary-color);
     font-size: 16px;
     outline: none;
+    transition: ease-in .2s;
 }
 
 .button:disabled {
@@ -164,4 +165,31 @@ section {
 .button--outline:hover {
     background: var(--primary-color);
     color: var(--on-primary);
+}
+
+.text__box {
+    width: 40%;
+    text-align: justify;
+    background: rgb(0 0 0 /50%);
+    color: var(--on-primary);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.text {
+    margin: 0;
+    line-height: 25px;
+}
+
+.socials__icon {
+    font-size: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    color: var(--primary-color);
+    transition: ease-in .2s;
+}
+
+.socials__icon:hover {
+    color: var(--on-background);
+    transform: scale(1.1);
 }
