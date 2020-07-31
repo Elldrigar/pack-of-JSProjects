@@ -7,11 +7,11 @@ font-family: 'Special Elite', cursive;
 */
 
 :root {
-    --primary-color: rgb(250, 98, 98);
+    --primary-color: #f96161;
     --primary-variant: #f13131;
     --secondary-color: #1b9999;
     --on-primary: #f1f1f1;
-    --on-background: rgb(66, 66, 66);
+    --on-background: #424242;
     --on-background-alt: rgba(66, 66, 66, .7);
     --background: #ffffff;
 
@@ -20,7 +20,7 @@ font-family: 'Special Elite', cursive;
 
 
 [data-theme="dark"] {
-    --primary-color: rgb(150, 65, 255);
+    --primary-color: #953fff;
     --primary-variant: #6c63ff;
     --secondary-color: #03dac5;
     --on-primary: #000000;
@@ -94,4 +94,23 @@ section {
     font-size: 36px;
     font-weight: 300;
     color: var(--on-background-alt);
+}
+
+.about__container {
+    display: flex;
+}
+
+.image__container {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-right: 25px;
+    width: auto;
+    background: var(--background);
+    box-shadow: var(--box-shadow);
+}
+
+.image {
+    width: 250px;
+    height: 250px;
 }
