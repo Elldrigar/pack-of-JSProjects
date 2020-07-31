@@ -46,8 +46,10 @@ body {
 .navigation {
     z-index: 10;
     position: fixed;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
     font-size: 24px;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     padding: 25px;
     width: 100vw;
     background: rgb(255 255 255 / 50%);
@@ -59,7 +61,6 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     border-bottom: 3px solid transparent;
-    font-weight: bold;
     transition: ease-in .3s;
 }
 
