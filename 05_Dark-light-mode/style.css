@@ -70,6 +70,81 @@ body {
     border-bottom: 3px solid;
 }
 
+.theme-wrapper {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 25px;
+    top: 30px;
+    z-index: 100;
+}
+
+.toggle {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.toggle__text {
+    position: relative;
+    top: -4px;
+    right: 5px;
+    color: var(--on-background);
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch__input {
+    display: none;
+}
+
+.theme-switch__slider {
+    position: absolute;
+    background: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.theme-switch__slider::before {
+    content: "";
+    position: absolute;
+    background: #ffffff;
+    bottom: 4px;
+    height: 26px;
+    left: 4px;
+    width: 26px;
+    transition: .4s;
+}
+
+.round {
+    border-radius: 34px;
+}
+
+.round::before {
+    border-radius: 50%;
+}
+
+.toggle__icon {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.theme-switch__input:checked+.theme-switch__slider {
+    background: var(--primary-color);
+}
+
+.theme-switch__input:checked+.theme-switch__slider::before {
+    transform: translateX(26px);
+}
+
 section {
     min-height: 100vh;
     display: flex;
