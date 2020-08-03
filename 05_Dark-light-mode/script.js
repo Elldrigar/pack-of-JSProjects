@@ -7,6 +7,8 @@ const imageThree = document.getElementById('image-3');
 const textBox = document.querySelector('.text__box');
 const darkTheme = 'dark';
 const lightTheme = 'light';
+const colorBlack = 'rgb(0 0 0 / 50%)';
+const colorWhite = 'rgb(255 255 255 / 50%)';
 
 //DARK OR LIGHT IMAGES
 function imageColor(color) {
@@ -16,10 +18,8 @@ function imageColor(color) {
 }
 
 function toggleDarkOrLight(theme) {
-  nav.style.backgroundColor =
-    theme === 'dark' ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
-  textBox.style.backgroundColor =
-    theme === 'dark' ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
+  nav.style.backgroundColor = theme === 'dark' ? colorBlack : colorWhite;
+  textBox.style.backgroundColor = theme === 'dark' ? colorWhite : colorBlack;
   toggleIcon.children[0].textContent =
     theme === 'dark' ? 'Dark Mode' : 'Light Mode';
   theme === 'dark'
