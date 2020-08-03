@@ -5,6 +5,8 @@ const imageOne = document.getElementById('image-1');
 const imageTwo = document.getElementById('image-2');
 const imageThree = document.getElementById('image-3');
 const textBox = document.querySelector('.text__box');
+const darkTheme = 'dark';
+const lightTheme = 'light';
 
 //DARK OR LIGHT IMAGES
 function imageColor(color) {
@@ -13,22 +15,17 @@ function imageColor(color) {
   imageThree.src = `img/undraw_video_game_${color}.svg`;
 }
 
-//DARK THEME
-function darkMode() {
-  nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-  textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-  toggleIcon.children[0].textContent = 'Dark Mode';
-  toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
-  imageColor('dark');
-}
-
-//LIGHT THEME
-function lightMode() {
-  nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
-  textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
-  toggleIcon.children[0].textContent = 'Light Mode';
-  toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-  imageColor('light');
+function toggleDarkOrLight(theme) {
+  nav.style.backgroundColor =
+    theme === 'dark' ? 'rgb(0 0 0 / 50%)' : 'rgb(255 255 255 / 50%)';
+  textBox.style.backgroundColor =
+    theme === 'dark' ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
+  toggleIcon.children[0].textContent =
+    theme === 'dark' ? 'Dark Mode' : 'Light Mode';
+  theme === 'dark'
+    ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon')
+    : toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
+  theme === 'dark' ? imageColor('dark') : imageColor('light');
 }
 
 //SWITCH THEME
@@ -36,11 +33,11 @@ function switchTheme(event) {
   if (event.target.checked) {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
-    darkMode();
+    toggleDarkOrLight(darkTheme);
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
-    lightMode();
+    toggleDarkOrLight(lightTheme);
   }
 }
 
@@ -50,7 +47,7 @@ if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true;
-    darkMode();
+    toggleDarkOrLight('darkTheme');
   }
 }
 
