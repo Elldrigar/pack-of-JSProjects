@@ -21,6 +21,141 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* NAV */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 9;
+}
+
+/* NAV MENU ITEMS */
+nav,
+nav ul {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    list-style: none;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    overflow: hidden;
+}
+
+nav li a {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 4px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+nav li a::before {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateX(-1000px);
+    transition: ease-out .2s;
+}
+
+nav li a::after {
+    content: "";
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translateX(1000px);
+    transition: all ease-out .2s;
+}
+
+nav li:hover a {
+    transform: scale(1.2);
+}
+
+nav li:hover a::after {
+    transform: translateX(0);
+}
+
+nav li:hover a::before {
+    transform: translateX(0);
+}
+
+nav li:nth-of-type(1) {
+    background-color: var(--navColor1);
+}
+
+nav li:nth-of-type(2) {
+    background-color: var(--navColor2);
+}
+
+nav li:nth-of-type(3) {
+    background-color: var(--navColor3);
+}
+
+nav li:nth-of-type(4) {
+    background-color: var(--navColor4);
+}
+
+nav li:nth-of-type(5) {
+    background-color: var(--navColor5);
+}
+
+.menu-bars {
+    display: inline;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 2px;
+    margin: 8px 0;
+    background-color: var(--primaryColor);
+    transform: .4s;
+}
+
+/* HAMBURGER ANIMATION */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
 section {
     display: flex;
     justify-content: center;
