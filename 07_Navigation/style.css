@@ -31,6 +31,17 @@ body {
     height: 100vh;
     background-color: rgba(0, 0, 0, .7);
     z-index: 9;
+    transform: translateX(-100vw);
+}
+
+.overlay-slide-right {
+    transform: translateX(0);
+    transition: all .4s ease-in-out;
+}
+
+.overlay-slide-left {
+    transform: translateX(-100vw);
+    transition: all .8s ease-in-out;
 }
 
 /* NAV MENU ITEMS */
@@ -131,6 +142,11 @@ nav li:nth-of-type(5) {
     right: 1rem;
     cursor: pointer;
     z-index: 10;
+    transition: .2s;
+}
+
+.menu:hover {
+    transform: scale(1.2);
 }
 
 .menu__bar1,
@@ -140,7 +156,7 @@ nav li:nth-of-type(5) {
     height: 2px;
     margin: 8px 0;
     background-color: var(--primaryColor);
-    transform: .4s;
+    transition: .4s;
 }
 
 /* HAMBURGER ANIMATION */
