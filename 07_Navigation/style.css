@@ -124,7 +124,7 @@ nav li:nth-of-type(5) {
     background-color: var(--navColor5);
 }
 
-.menu-bars {
+.menu {
     display: inline;
     position: fixed;
     top: 1rem;
@@ -133,9 +133,9 @@ nav li:nth-of-type(5) {
     z-index: 10;
 }
 
-.bar1,
-.bar2,
-.bar3 {
+.menu__bar1,
+.menu__bar2,
+.menu__bar3 {
     width: 35px;
     height: 2px;
     margin: 8px 0;
@@ -144,15 +144,15 @@ nav li:nth-of-type(5) {
 }
 
 /* HAMBURGER ANIMATION */
-.change .bar1 {
+.change .menu__bar1 {
     transform: rotate(-45deg) translate(-7px, 8px);
 }
 
-.change .bar2 {
+.change .menu__bar2 {
     opacity: 0;
 }
 
-.change .bar3 {
+.change .menu__bar3 {
     transform: rotate(45deg) translate(-6px, -8px);
 }
 
