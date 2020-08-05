@@ -1,8 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 :root {
-    --primaryColor: #ffffff;
-    --navColor1: #212121;
-    --navColor2: #212121;
-    --navColor3: #212121;
-    --navColor4: #212121;
-    --navColor5: #212121;
+    --background: #000000;
+    --primaryColor: #fdfdfd;
+    --navColor1: #99b898;
+    --navColor2: #c3aed6;
+    --navColor3: #feceab;
+    --navColor4: #ff847c;
+    --navColor5: #e84a5f;
+}
+
+html {
+    box-shadow: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background);
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--primaryColor);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+section#home {
+    background-image: url(https://images.unsplash.com/photo-1529154691717-3306083d869e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center center;
+}
+
+section#home a {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    color: var(--primaryColor);
+    border-bottom: 1px solid var(--primaryColor);
+    z-index: 2;
+}
+
+section#about {
+    background-color: var(--navColor2);
+}
+
+section#skills {
+    background-color: var(--navColor3);
+}
+
+section#projects {
+    background-color: var(--navColor4);
+}
+
+section#contact {
+    background-color: var(--navColor5);
 }
