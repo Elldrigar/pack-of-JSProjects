@@ -33,6 +33,7 @@
 | [PiP][pr03]                       | Picture in Picture Video player                   | <img src="https://demo.gawron.me/screens/03_screen.png" width="100"> |
 | [Tell Me a Joke][pr04]            | Using VoiceRSS API and JokeAPI                    | <img src="https://demo.gawron.me/screens/04_screen.png" width="100"> |
 | [Light/Dark theme switcher][pr05] | Switch between two themes, saves in local storage | <img src="https://demo.gawron.me/screens/05_screen.png" width="100"> |
+| [Animation onScroll][pr06]        | Animation using AnimateOnScroll Library           | <img src="https://demo.gawron.me/screens/06_screen.png" width="100"> |
 
 <!-- LINKS -->
 
@@ -41,6 +42,7 @@
 [pr03]: https://demo.gawron.me/picture-in-picture/
 [pr04]: https://demo.gawron.me/tell-joke/
 [pr05]: https://demo.gawron.me/dark-light/
+[pr06]: https://demo.gawron.me/animation-temp/
 [github-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterbadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
