@@ -35,6 +35,7 @@ const songs = [
 ];
 
 let isPlaying = false;
+let songIndex = 0;
 
 // PLAY
 function playSong() {
@@ -51,8 +52,30 @@ function pauseSong() {
   music.pause();
 }
 
+// NEXT SONG
+function nextSong() {
+  songIndex++;
+  if (songIndex > songs.length - 1) {
+    songIndex = 0;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}
+
+// PREVIOUS SONG
+function prevSong() {
+  songIndex--;
+  if (songIndex < 0) {
+    songIndex = songs.length - 1;
+  }
+  loadSong(songs[songIndex]);
+  playSong();
+}
+
 // EVENT LISTENERS
+prevBtn.addEventListener('click', prevSong);
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
+nextBtn.addEventListener('click', nextSong);
 
 // UPDATE DOM
 function loadSong(song) {
@@ -63,4 +86,4 @@ function loadSong(song) {
 }
 
 // ON LOAD
-loadSong(songs[2]);
+loadSong(songs[songIndex]);
