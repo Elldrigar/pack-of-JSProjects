@@ -106,12 +106,20 @@ function updateProgressBarAndTime(event) {
     }
   }
 }
+// SET PROGRESSBAR
+function setProgressBar(event) {
+  const width = this.clientWidth;
+  const clickBar = event.offsetX;
+  const { duration } = music;
+  music.currentTime = (clickBar / width) * duration;
+}
 
 // EVENT LISTENERS
 prevBtn.addEventListener('click', prevSong);
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
 nextBtn.addEventListener('click', nextSong);
 music.addEventListener('timeupdate', updateProgressBarAndTime);
+progressContainer.addEventListener('click', setProgressBar);
 
 // UPDATE DOM
 function loadSong(song) {
