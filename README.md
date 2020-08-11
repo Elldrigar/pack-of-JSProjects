@@ -26,15 +26,16 @@
 
 # 📋 Projects List:
 
-| Project Name                      | Description                                              | Screen                                                               |
-| --------------------------------- | -------------------------------------------------------- | -------------------------------------------------------------------- |
-| [Quote Generator][pr01]           | Using forismatic API                                     | <img src="https://demo.gawron.me/screens/01_screen.png" width="100"> |
-| [Random Images on scroll][pr02]   | Using unsplash API                                       | <img src="https://demo.gawron.me/screens/02_screen.png" width="100"> |
-| [PiP][pr03]                       | Picture in Picture Video player                          | <img src="https://demo.gawron.me/screens/03_screen.png" width="100"> |
-| [Tell Me a Joke][pr04]            | Using VoiceRSS API and JokeAPI                           | <img src="https://demo.gawron.me/screens/04_screen.png" width="100"> |
-| [Light/Dark theme switcher][pr05] | Switch between two themes, saves in local storage        | <img src="https://demo.gawron.me/screens/05_screen.png" width="100"> |
-| [Animation onScroll][pr06]        | Animation using AnimateOnScroll Library                  | <img src="https://demo.gawron.me/screens/06_screen.png" width="100"> |
-| [Full Screen Menu][pr07]          | Full Screen Navigation Menu with slide IN/OUT animations | <img src="https://demo.gawron.me/screens/07_screen.jpg" width="100"> |
+| Project Name                      | Description                                                                                     | Screen                                                               |
+| --------------------------------- | ----------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| [Quote Generator][pr01]           | Using forismatic API                                                                            | <img src="https://demo.gawron.me/screens/01_screen.png" width="100"> |
+| [Random Images on scroll][pr02]   | Using unsplash API                                                                              | <img src="https://demo.gawron.me/screens/02_screen.png" width="100"> |
+| [PiP][pr03]                       | Picture in Picture Video player                                                                 | <img src="https://demo.gawron.me/screens/03_screen.png" width="100"> |
+| [Tell Me a Joke][pr04]            | Using VoiceRSS API and JokeAPI                                                                  | <img src="https://demo.gawron.me/screens/04_screen.png" width="100"> |
+| [Light/Dark theme switcher][pr05] | Switch between two themes, saves in local storage                                               | <img src="https://demo.gawron.me/screens/05_screen.png" width="100"> |
+| [Animation onScroll][pr06]        | Animation using AnimateOnScroll Library                                                         | <img src="https://demo.gawron.me/screens/06_screen.png" width="100"> |
+| [Full Screen Menu][pr07]          | Full Screen Navigation Menu with slide IN/OUT animations                                        | <img src="https://demo.gawron.me/screens/07_screen.jpg" width="100"> |
+| [Music Player][pr08]              | Music Player with clickable progressBar, fast Backward/Forward buttons and cover song displayer | <img src="https://demo.gawron.me/screens/08_screen.png" width="100"> |
 
 <!-- LINKS -->
 
@@ -45,6 +46,7 @@
 [pr05]: https://demo.gawron.me/dark-light/
 [pr06]: https://demo.gawron.me/animation-temp/
 [pr07]: https://demo.gawron.me/navigation/
+[pr08]: https://demo.gawron.me/music-player/
 [github-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterbadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
