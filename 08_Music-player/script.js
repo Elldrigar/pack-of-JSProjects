@@ -8,6 +8,8 @@ const music = document.querySelector('audio');
 const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
+const plusTenSec = document.getElementById('plusTenSec');
+const minusTenSec = document.getElementById('minusTenSec');
 
 // PROGRESS BAR & TIME
 const progressContainer = document.getElementById('progress-container');
@@ -114,10 +116,22 @@ function setProgressBar(event) {
   music.currentTime = (clickBar / width) * duration;
 }
 
+// PLUS AND MINUS 10 SEC BUTTONS
+function plusTen() {
+  const { currentTime } = music;
+  music.currentTime = currentTime + 10;
+}
+function minusTen() {
+  const { currentTime } = music;
+  music.currentTime = currentTime - 10;
+}
+
 // EVENT LISTENERS
 prevBtn.addEventListener('click', prevSong);
 playBtn.addEventListener('click', () => (isPlaying ? pauseSong() : playSong()));
 nextBtn.addEventListener('click', nextSong);
+plusTenSec.addEventListener('click', plusTen);
+minusTenSec.addEventListener('click', minusTen);
 music.addEventListener('timeupdate', updateProgressBarAndTime);
 music.addEventListener('ended', nextSong);
 progressContainer.addEventListener('click', setProgressBar);
