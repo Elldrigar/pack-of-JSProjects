@@ -94,7 +94,9 @@ function updateProgressBarAndTime(event) {
     if (durationSeconds < 10) {
       durationSeconds = `0${durationSeconds}`;
     }
-    durationTime.textContent = `${durationMinutes}:${durationSeconds}`;
+    if (durationSeconds) {
+      durationTime.textContent = `${durationMinutes}:${durationSeconds}`;
+    }
   }
 }
 
