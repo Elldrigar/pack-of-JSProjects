@@ -12,7 +12,7 @@ const nextBtn = document.getElementById('next');
 // PROGRESS BAR & TIME
 const progressContainer = document.getElementById('progress-container');
 const progress = document.getElementById('progress');
-const currentTime = document.getElementById('current-time');
+const currentTimer = document.getElementById('current-time');
 const durationTime = document.getElementById('duration');
 
 // MUSIC
@@ -90,12 +90,19 @@ function updateProgressBarAndTime(event) {
     progress.style.width = `${progressPercent}%`;
     // CALCULATE TIME FOR DISPLAY
     const durationMinutes = Math.floor(duration / 60);
-    const durationSeconds = Math.floor(duration % 60);
+    const currentMinutes = Math.floor(currentTime / 60);
+    let durationSeconds = Math.floor(duration % 60);
+    let currentSeconds = Math.floor(currentTime % 60);
+
     if (durationSeconds < 10) {
       durationSeconds = `0${durationSeconds}`;
     }
+    if (currentSeconds < 10) {
+      currentSeconds = `0${currentSeconds}`;
+    }
     if (durationSeconds) {
       durationTime.textContent = `${durationMinutes}:${durationSeconds}`;
+      currentTimer.textContent = `${currentMinutes}:${currentSeconds}`;
     }
   }
 }
