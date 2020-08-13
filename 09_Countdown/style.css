@@ -3,3 +3,42 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+/* VIDEO BACKGROUND */
+
+.video-background {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: auto;
+}
+
+.video-background--overlay {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(255, 255, 255, .5);
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1280px) {
+    .video-background {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    video {
+        object-fit: cover;
+    }
+}
