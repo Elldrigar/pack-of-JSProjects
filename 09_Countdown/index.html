@@ -16,7 +16,26 @@
     </video>
     <div class="video-background--overlay"></div>
     <!-- CONTAINER -->
-    <div class="container"></div>
+    <div class="container">
+        <!-- INPUT -->
+        <div class="container__input" id="container__input">
+            <h1>Odlicz konkretną datę</h1>
+            <div class="form" id="countdownForm">
+                <input type="text" name="name" autocomplete="off" required id="name" />
+                <label class="form__label" for="name">
+                    <span class="form__name">Nazwa Wydarzenia</span>
+                </label>
+            </div>
+            <div class="form" id="countdownForm">
+                <input type="text" name="date" autocomplete="off" required id="date" onfocus="(this.type='date')"
+                    onblur="(this.type='text')" placeholder="" />
+                <label class="form__label" for="date">
+                    <span class="form__name">Wybierz date</span>
+                </label>
+            </div>
+            <button type="submit">Start</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
