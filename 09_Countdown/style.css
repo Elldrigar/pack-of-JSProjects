@@ -57,7 +57,7 @@ body {
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 32px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
@@ -162,7 +162,7 @@ button:active {
 
 /* COUNTDOWN */
 ul {
-    /* margin-left: -45px; */
+    text-align: center;
 }
 
 li {
@@ -187,6 +187,10 @@ li span {
         min-height: 245px;
         padding: 20px;
         margin: 10px;
+    }
+
+    h1 {
+        font-size: 21px;
     }
 
     li {
