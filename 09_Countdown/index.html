@@ -18,7 +18,7 @@
     <!-- CONTAINER -->
     <div class="container">
         <!-- INPUT -->
-        <div class="container__input" id="container__input">
+        <div class="container__input" id="container__input" hidden>
             <h1>Odlicz konkretną datę</h1>
             <div class="form" id="countdownForm">
                 <input type="text" name="name" autocomplete="off" required id="name" />
@@ -34,6 +34,17 @@
                 </label>
             </div>
             <button type="submit">Start</button>
+        </div>
+        <!-- COUNTDOWN -->
+        <div class="countdown" id="countdown">
+            <h1 id="countdown-title">Nazwa Wydarzenia</h1>
+            <ul>
+                <li><span>21</span>Dni</li>
+                <li><span>17</span>Godzin</li>
+                <li><span>4</span>Minut</li>
+                <li><span>23</span>Sekund</li>
+            </ul>
+            <button id="countdown-reset">Resetuj</button>
         </div>
     </div>
     <script src="script.js"></script>
