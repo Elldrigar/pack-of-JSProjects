@@ -10,6 +10,7 @@ const countdownTimeElements = document.querySelectorAll('.timeValue');
 let countdownTitle = '';
 let countdownDate = '';
 let countdownValue = Date;
+let countdownActive;
 
 const second = 1000;
 const minute = second * 60;
@@ -22,22 +23,24 @@ dateElement.setAttribute('min', today);
 
 // POPULATE COUNTDOWN
 function updateDOM() {
-  const now = new Date().getTime();
-  const distance = countdownValue - now;
-  const days = Math.floor(distance / day);
-  const hours = Math.floor((distance % day) / hour);
-  const minutes = Math.floor((distance % hour) / minute);
-  const seconds = Math.floor((distance % minute) / second);
+  countdownActive = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = countdownValue - now;
+    const days = Math.floor(distance / day);
+    const hours = Math.floor((distance % day) / hour);
+    const minutes = Math.floor((distance % hour) / minute);
+    const seconds = Math.floor((distance % minute) / second);
 
-  countdownElementTitle.textContent = `${countdownTitle} za:`;
-  countdownTimeElements[0].textContent = `${days}`;
-  countdownTimeElements[1].textContent = `${hours}`;
-  countdownTimeElements[2].textContent = `${minutes}`;
-  countdownTimeElements[3].textContent = `${seconds}`;
+    countdownElementTitle.textContent = `${countdownTitle} za:`;
+    countdownTimeElements[0].textContent = `${days}`;
+    countdownTimeElements[1].textContent = `${hours}`;
+    countdownTimeElements[2].textContent = `${minutes}`;
+    countdownTimeElements[3].textContent = `${seconds}`;
 
-  //   HIDE INPUT CONTAINER,SHOW COUNTDOWN CONTAINER
-  inputContainer.hidden = true;
-  countdownElement.hidden = false;
+    //   HIDE INPUT CONTAINER,SHOW COUNTDOWN CONTAINER
+    inputContainer.hidden = true;
+    countdownElement.hidden = false;
+  }, second);
 }
 
 // TAKE VALUES FROM FORM INPUT
