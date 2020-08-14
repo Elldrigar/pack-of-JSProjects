@@ -28,7 +28,16 @@ function updateDOM() {
   const hours = Math.floor((distance % day) / hour);
   const minutes = Math.floor((distance % hour) / minute);
   const seconds = Math.floor((distance % minute) / second);
-  console.log(days, hours, minutes, seconds);
+
+  countdownElementTitle.textContent = `${countdownTitle} za:`;
+  countdownTimeElements[0].textContent = `${days}`;
+  countdownTimeElements[1].textContent = `${hours}`;
+  countdownTimeElements[2].textContent = `${minutes}`;
+  countdownTimeElements[3].textContent = `${seconds}`;
+
+  //   HIDE INPUT CONTAINER,SHOW COUNTDOWN CONTAINER
+  inputContainer.hidden = true;
+  countdownElement.hidden = false;
 }
 
 // TAKE VALUES FROM FORM INPUT
