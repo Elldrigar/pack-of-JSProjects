@@ -179,6 +179,43 @@ li span {
     text-align: center;
 }
 
+/* COMPLETED COUNTDOWN */
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.complete__title {
+    animation: complete 2s infinite;
+}
+
+@keyframes complete {
+    0% {
+        color: rgb(74, 6, 80);
+        transform: scale(.8);
+    }
+
+    25% {
+        color: rgb(191, 26, 206);
+    }
+
+    50% {
+        color: rgb(255, 0, 200);
+        transform: scale(1.1);
+    }
+
+    75% {
+        color: rgb(191, 26, 206);
+    }
+
+    100% {
+        color: rgb(74, 6, 80);
+        transform: scale(.8);
+    }
+}
+
 /* MEDIA QUERY */
 @media screen and (max-width:600px) {
     .container {
