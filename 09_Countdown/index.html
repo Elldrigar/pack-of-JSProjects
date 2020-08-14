@@ -18,25 +18,27 @@
     <!-- CONTAINER -->
     <div class="container">
         <!-- INPUT -->
-        <div class="container__input" id="container__input" hidden>
+        <div class="container__input" id="container-input">
             <h1>Odlicz konkretną datę</h1>
-            <div class="form" id="countdownForm">
-                <input type="text" name="name" autocomplete="off" required id="name" />
-                <label class="form__label" for="name">
-                    <span class="form__name">Nazwa Wydarzenia</span>
-                </label>
-            </div>
-            <div class="form" id="countdownForm">
-                <input type="text" name="date" autocomplete="off" required id="date" onfocus="(this.type='date')"
-                    onblur="(this.type='text')" placeholder="" />
-                <label class="form__label" for="date">
-                    <span class="form__name">Wybierz date</span>
-                </label>
-            </div>
-            <button type="button-submit">Start</button>
+            <form id="countdownForm">
+                <div class="form" id="countdownForm-title">
+                    <input type="text" name="name" autocomplete="off" required id="name" />
+                    <label class="form__label" for="name">
+                        <span class="form__name">Nazwa Wydarzenia</span>
+                    </label>
+                </div>
+                <div class="form" id="countdownForm-date">
+                    <input type="text" name="date" autocomplete="off" required id="date" onfocus="(this.type='date')"
+                        onblur="(this.type='text')" placeholder="" />
+                    <label class="form__label" for="date">
+                        <span class="form__name">Wybierz date</span>
+                    </label>
+                </div>
+                <button type="submit">Start</button>
+            </form>
         </div>
         <!-- COUNTDOWN -->
-        <div class="countdown" id="countdown">
+        <div class="countdown" id="countdown" hidden>
             <h1 id="countdown-title">Nazwa Wydarzenia</h1>
             <ul>
                 <li><span>21</span>Dni</li>
@@ -47,7 +49,7 @@
             <button id="button-countdownReset">Resetuj</button>
         </div>
         <!-- COMPLETE COUNTDOWN -->
-        <div class="complete" id="complete">
+        <div class="complete" id="complete" hidden>
             <h1 class="complete__title">Odliczanie Zakończone!</h1>
             <h2>Odliczanie zakończono dnia 14.08.2020</h2>
             <button id="button-newCountdown">Nowe odliczanie</button>
