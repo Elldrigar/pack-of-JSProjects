@@ -73,6 +73,7 @@ function resetCountdown() {
   countdownElement.hidden = true;
   inputContainer.hidden = false;
   completeElement.hidden = true;
+  countdownForm.reset();
 }
 
 // EVENT LISTENERS
