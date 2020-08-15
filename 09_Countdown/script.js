@@ -67,13 +67,15 @@ function updateCountdown(event) {
 
 // RESET COUNTDOWN
 function resetCountdown() {
-  countdownElement.hidden = true;
-  inputContainer.hidden = false;
   clearInterval(countdownActive);
   countdownTitle = '';
   countdownDate = '';
+  countdownElement.hidden = true;
+  inputContainer.hidden = false;
+  completeElement.hidden = true;
 }
 
 // EVENT LISTENERS
 countdownForm.addEventListener('submit', updateCountdown);
 countdownResetButton.addEventListener('click', resetCountdown);
+newCountdownButton.addEventListener('click', resetCountdown);
