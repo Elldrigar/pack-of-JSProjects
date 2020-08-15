@@ -37,7 +37,7 @@ function updateDOM() {
     countdownTimeElements[2].textContent = `${minutes}`;
     countdownTimeElements[3].textContent = `${seconds}`;
 
-    //   HIDE INPUT CONTAINER,SHOW COUNTDOWN CONTAINER
+    // HIDE INPUT CONTAINER,SHOW COUNTDOWN CONTAINER
     inputContainer.hidden = true;
     countdownElement.hidden = false;
   }, second);
@@ -52,7 +52,15 @@ function updateCountdown(event) {
   updateDOM();
 }
 
-console.log(countdownTimeElements);
+// RESET COUNTDOWN
+function resetCountdown() {
+  countdownElement.hidden = true;
+  inputContainer.hidden = false;
+  clearInterval(countdownActive);
+  countdownTitle = '';
+  countdownDate = '';
+}
 
 // EVENT LISTENERS
 countdownForm.addEventListener('submit', updateCountdown);
+countdownResetButton.addEventListener('click', resetCountdown);
