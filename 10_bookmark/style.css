@@ -96,3 +96,10 @@ a:active {
     vertical-align: sub;
     margin-right: 10px;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
