@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 
 :root {
-    --primary-color: #242424;
+    --primary-color: #761b79;
 }
 
 * {
@@ -50,7 +50,6 @@ body {
     top: 5px;
     right: 5px;
     cursor: pointer;
-    z-index: 5;
     transition: all .2s;
 }
 
@@ -95,6 +94,95 @@ a:active {
     width: 30px;
     vertical-align: sub;
     margin-right: 10px;
+}
+
+/* MODAL */
+.modal-container {
+    background: rgba(0, 0, 0, .6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.show-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    max-width: 95%;
+    width: 500px;
+    animation: modalopen .7s;
+}
+
+.modal__header {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: var(--primary-color);
+    color: #e7e7e7;
+    padding: 16px;
+    height: 50px;
+}
+
+.modal__icon {
+    position: absolute;
+    color: #e7e7e7;
+    font-size: 30px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 5;
+    transition: all .2s;
+}
+
+.modal__icon:hover {
+    transform: scale(1.1);
+    color: rgb(221, 9, 9);
+}
+
+.modal__content {
+    background: #e7e7e7;
+    padding: 25px;
+}
+
+/* FORM */
+.bookmark-form__group {
+    height: 55px;
+}
+
+.bookmark-form__input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--primary-color);
+    outline: none;
+    border-radius: 5px;
+}
+
+.bookmark-form__label {
+    color: var(--primary-color);
+    display: block;
+    margin: 10px 0;
+}
+
+@keyframes modalopen {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
 }
 
 /* MEDIA QUERY */

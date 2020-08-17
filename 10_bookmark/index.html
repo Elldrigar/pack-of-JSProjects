@@ -41,7 +41,30 @@
                 <img src="https://s2.googleusercontent.com/s2/favicons?domain=www.gawron.me" alt="favicon">
                 <a href="https://www.gawron.me" target="_blank" rel="noopener noreferrer">Gawron.me</a>
             </div>
-        </div>`
+        </div>
+    </div>
+    <!-- MODAL -->
+    <div class="modal-container show-modal" id="modal">
+        <div class="modal">
+            <i class="modal__icon far fa-times-circle" id="close-modal"></i>
+            <div class="modal__header">
+                <h3>Dodaj Zakładkę</h3>
+            </div>
+            <div class="modal__content">
+                <form id="bookmark-form">
+                    <!-- WEBSITE NAME -->
+                    <div class="bookmark-form__group">
+                        <label class="bookmark-form__label" for="website-name">Nazwa Strony</label>
+                        <input class="bookmark-form__input" type="text" id="website-name">
+                    </div>
+                    <!-- WEBSITE URL -->
+                    <div class="bookmark-form__group">
+                        <label class="bookmark-form__label" for="website-url">URL Strony</label>
+                        <input class="bookmark-form__input" type="text" id="website-url">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
