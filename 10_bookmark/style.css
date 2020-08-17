@@ -175,6 +175,26 @@ a:active {
     margin: 10px 0;
 }
 
+.bookmark-form__button {
+    cursor: pointer;
+    color: #e7e7e7;
+    background: var(--primary-color);
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.bookmark-form__button:hover {
+    filter: brightness(110%);
+}
+
+.bookmark-form__button:focus {
+    outline: none;
+}
+
 @keyframes modalopen {
     from {
         transform: scale(0);
