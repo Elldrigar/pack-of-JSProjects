@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #761b79;
+    --red-color: #dd0909;
 }
 
 * {
@@ -55,7 +56,7 @@ body {
 
 .bookmark__close:hover {
     transform: scale(1.1);
-    color: rgb(221, 9, 9);
+    color: var(--red-color);
 }
 
 .bookmark__item {
@@ -111,7 +112,6 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .modal {
@@ -147,7 +147,7 @@ a:active {
 
 .modal__icon:hover {
     transform: scale(1.1);
-    color: rgb(221, 9, 9);
+    color: var(--red-color);
 }
 
 .modal__content {
