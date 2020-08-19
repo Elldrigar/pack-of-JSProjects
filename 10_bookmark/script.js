@@ -5,6 +5,7 @@ const bookmarkForm = document.getElementById('bookmark-form');
 const websiteNameElement = document.getElementById('website-name');
 const websiteUrlElement = document.getElementById('website-url');
 const bookmarksContainer = document.getElementById('bookmarks-container');
+let bookmarks = [];
 
 // SHOW MODAL
 function showModal() {
@@ -40,8 +41,13 @@ function storeBookmark(event) {
   if (!validate(nameValue, urlValue)) {
     return false;
   }
-
-  //   validate(nameValue, urlValue);
+  const bookmark = {
+    name: nameValue,
+    url: urlValue,
+  };
+  bookmarks.push(bookmark);
+  bookmarkForm.reset();
+  websiteNameElement.focus();
 }
 
 // EVENT LISTENER
