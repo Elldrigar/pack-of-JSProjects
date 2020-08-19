@@ -28,6 +28,17 @@ function validate(nameValue, urlValue) {
   return true;
 }
 
+// DELETE BOOKMARKS
+function deleteBookmark(url) {
+  bookmarks.forEach((bookmark, i) => {
+    if (bookmark.url === url) {
+      bookmarks.splice(i, 1);
+    }
+  });
+  localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+  fetchBookmarks();
+}
+
 // BUILD BOOKMARKS DOM
 function buildBookmarks() {
   bookmarksContainer.textContent = '';
@@ -38,7 +49,7 @@ function buildBookmarks() {
     const closeIcon = document.createElement('i');
     closeIcon.classList.add('bookmark__close', 'far', 'fa-times-circle');
     closeIcon.setAttribute('title', 'Usuń');
-    // closeIcon.setAttribute('onclick', `deleteBookmark('${url}')`);
+    closeIcon.setAttribute('onclick', `deleteBookmark('${url}')`);
     const linkInfo = document.createElement('div');
     linkInfo.classList.add('bookmark__name');
     const favicon = document.createElement('img');
