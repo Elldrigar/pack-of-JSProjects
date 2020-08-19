@@ -30,6 +30,7 @@ function validate(nameValue, urlValue) {
 
 // BUILD BOOKMARKS DOM
 function buildBookmarks() {
+  bookmarksContainer.textContent = '';
   bookmarks.forEach((bookmark) => {
     const { name, url } = bookmark;
     const item = document.createElement('div');
