@@ -46,6 +46,7 @@ function storeBookmark(event) {
     url: urlValue,
   };
   bookmarks.push(bookmark);
+  localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   bookmarkForm.reset();
   websiteNameElement.focus();
 }
