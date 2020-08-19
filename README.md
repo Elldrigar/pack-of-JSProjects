@@ -37,6 +37,7 @@
 | [Full Screen Menu][pr07]          | Full Screen Navigation Menu with slide IN/OUT animations                                        | <img src="https://demo.gawron.me/screens/07_screen.jpg" width="100"> |
 | [Music Player][pr08]              | Music Player with clickable progressBar, fast Backward/Forward buttons and cover song displayer | <img src="https://demo.gawron.me/screens/08_screen.png" width="100"> |
 | [Custom Countdown][pr09]          | Choose a date to start countdown days, hours and minutes                                        | <img src="https://demo.gawron.me/screens/09_screen.png" width="100"> |
+| [Bookmarks Library][pr10]         | save your bookmarks on the homepage                                                             | <img src="https://demo.gawron.me/screens/10_screen.png" width="100"> |
 
 <!-- LINKS -->
 
@@ -49,6 +50,7 @@
 [pr07]: https://demo.gawron.me/navigation/
 [pr08]: https://demo.gawron.me/music-player/
 [pr09]: https://demo.gawron.me/countdown/
+[pr10]: https://demo.gawron.me/bookmark/
 [github-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterbadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
