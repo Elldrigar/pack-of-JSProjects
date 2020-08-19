@@ -28,8 +28,22 @@ function validate(nameValue, urlValue) {
   return true;
 }
 
-//HANDLE FORM
+// FETCH BOOKMARKS
+function fetchBookmarks() {
+  if (localStorage.getItem('bookmarks')) {
+    bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+  } else {
+    bookmarks = [
+      {
+        name: 'Gawron',
+        url: 'https://gawron.me',
+      },
+    ];
+    localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+  }
+}
 
+//HANDLE FORM
 function storeBookmark(event) {
   event.preventDefault();
   const nameValue = websiteNameElement.value;
@@ -47,6 +61,7 @@ function storeBookmark(event) {
   };
   bookmarks.push(bookmark);
   localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+  fetchBookmarks();
   bookmarkForm.reset();
   websiteNameElement.focus();
 }
@@ -60,3 +75,6 @@ window.addEventListener('click', (event) =>
   event.target === modal ? modal.classList.remove('show-modal') : false
 );
 bookmarkForm.addEventListener('submit', storeBookmark);
+
+// ON LOAD
+fetchBookmarks();
