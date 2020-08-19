@@ -28,6 +28,35 @@ function validate(nameValue, urlValue) {
   return true;
 }
 
+// BUILD BOOKMARKS DOM
+function buildBookmarks() {
+  bookmarks.forEach((bookmark) => {
+    const { name, url } = bookmark;
+    const item = document.createElement('div');
+    item.classList.add('bookmark__item');
+    const closeIcon = document.createElement('i');
+    closeIcon.classList.add('bookmark__close', 'far', 'fa-times-circle');
+    closeIcon.setAttribute('title', 'Usuń');
+    // closeIcon.setAttribute('onclick', `deleteBookmark('${url}')`);
+    const linkInfo = document.createElement('div');
+    linkInfo.classList.add('bookmark__name');
+    const favicon = document.createElement('img');
+    favicon.setAttribute(
+      'src',
+      `https://s2.googleusercontent.com/s2/favicons?domain=${url}`
+    );
+    favicon.setAttribute('alt', 'favicon');
+    const link = document.createElement('a');
+    link.setAttribute('href', `${url}`);
+    link.setAttribute('target', '_blank');
+    link.textContent = name;
+
+    linkInfo.append(favicon, link);
+    item.append(closeIcon, linkInfo);
+    bookmarksContainer.appendChild(item);
+  });
+}
+
 // FETCH BOOKMARKS
 function fetchBookmarks() {
   if (localStorage.getItem('bookmarks')) {
@@ -41,6 +70,7 @@ function fetchBookmarks() {
     ];
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
   }
+  buildBookmarks();
 }
 
 //HANDLE FORM
