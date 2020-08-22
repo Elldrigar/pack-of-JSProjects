@@ -8,6 +8,11 @@ let isValid = false;
 
 function validateForm() {
   isValid = form.checkValidity();
+  if (!isValid) {
+    message.textContent = 'Please fill out all fields!';
+    message.style.color = '#db1717';
+    messagecontainer.style.borderColor = '#db1717';
+  }
 }
 
 function procesFormData(event) {
