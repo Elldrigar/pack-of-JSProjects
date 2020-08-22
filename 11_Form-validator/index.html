@@ -15,17 +15,18 @@
         <!-- Full Name -->
         <div class="form-group">
             <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Full Name">
+            <input type="text" id="name" name="name" placeholder="Full Name" minlength="3" maxlength="50" required>
         </div>
         <!-- Phone Number -->
         <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+            <input type="tel" id="phone" name="phone" placeholder="500-123-456" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                required>
         </div>
         <!-- Email Address -->
         <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="email@address.com">
+            <input type="email" id="email" name="email" placeholder="email@address.com" required>
         </div>
         <!-- Website URL -->
         <div class="form-group">
