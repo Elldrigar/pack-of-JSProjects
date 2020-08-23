@@ -38,9 +38,25 @@ function validateForm() {
   }
 }
 
+function storeFormData() {
+  const user = {
+    name: form.name.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    website: form.website.value,
+    password: form.password.value,
+  };
+
+  //   DO SOMETHING WITH DATA USER
+  console.log(user);
+}
+
 function procesFormData(event) {
   event.preventDefault();
   validateForm();
+  if (isValid && passwordsMatch) {
+    storeFormData();
+  }
 }
 
 // EVENT LISTENER
