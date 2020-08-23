@@ -39,6 +39,7 @@
 | 09  | [Custom Countdown][pr09]          | Choose a date to start countdown days, hours and minutes                                        | <img src="https://demo.gawron.me/screens/09_screen.png" width="100"> |
 | 10  | [Bookmarks Library][pr10]         | save your bookmarks on the homepage                                                             | <img src="https://demo.gawron.me/screens/10_screen.png" width="100"> |
 | 11  | [Form Validator][pr11]            | Simple form validator                                                                           | <img src="https://demo.gawron.me/screens/11_screen.png" width="100"> |
+| 12  | [Pong Game][pr12]                 | Canvas game PONG - Work in progress                                                             | <img src="https://demo.gawron.me/screens/12_screen.png" width="100"> |
 
 <!-- LINKS -->
 
@@ -53,6 +54,7 @@
 [pr09]: https://demo.gawron.me/countdown/
 [pr10]: https://demo.gawron.me/bookmark/
 [pr11]: https://demo.gawron.me/form-validate/
+[pr12]: https://demo.gawron.me/pong/
 [github-url]: https://badgen.net/github/release/Elldrigar/pack-of-JSProjects?icon=github
 [mit-license-image]: https://badgen.net/badge/license/MIT/blue
 [twitterbadge-url]: https://badgen.net/twitter/follow/Elldrigar?icon=twitter
