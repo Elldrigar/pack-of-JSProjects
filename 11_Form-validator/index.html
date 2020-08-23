@@ -11,7 +11,7 @@
 <div class="container">
     <h1>Sign Up!</h1>
     <!-- Form -->
-    <form id="form" novalidate>
+    <form id="form">
         <!-- Full Name -->
         <div class="form-group">
             <label for="name">Full Name</label>
@@ -38,13 +38,13 @@
             <label for="password1">Password</label>
             <input type="password" id="password1" placeholder="Create Password"
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number.">
+                title="Please include at least 1 uppercase character, 1 lowercase character, and 1 number." required>
         </div>
         <!-- Confirm Password -->
         <div class="form-group">
             <label for="password2">Confirm Password</label>
             <input type="password" id="password2" placeholder="Confirm Password" name="password"
-                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$">
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
         </div>
         <button type="submit">Register</button>
     </form>
